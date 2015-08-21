@@ -15,11 +15,21 @@ public class Hello {
 
 	public static String greetingMessage(){
 		// TODO Implement this method to return string "Hello GitHub".
-		return "";
+		return "Hello Github";
 	}
 	
 	public static int[] bubbleSort(int[] array){
 		// TODO Implement this method to sort the given array in an ascending order and return the sorted array.
+		for(int i=1;i<array.length;i++)
+		{
+			if(array[i]<array[i-1])
+			{
+				int temp=array[i-1];
+				array[i-1]=array[i];
+				array[i]=temp;
+				i=0;
+			}
+		}
 		return array;
 	}
 	
